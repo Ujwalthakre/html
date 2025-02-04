@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarang 2025 Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        color: #1a1a1a;
+      }
+      
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+      }
+      
+      h1 {
+        text-align: center;
+        color: #4a154b;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 15px;
+      }
+      
+      h1::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        border-radius: 2px;
+      }
+      
+      .form-group {
+        margin-bottom: 25px;
+        position: relative;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        color: #4a154b;
+        font-size: 0.95rem;
+        transition: color 0.3s ease;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px 16px;
+        border: 2px solid #e1e1e1;
+        border-radius: 12px;
+        box-sizing: border-box;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background: white;
+      }
+      
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      input[type="tel"]:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+        transform: translateY(-1px);
+      }
+      
+      input[type="tel"] {
+        -webkit-text-security: disc;
+        font-family: text-security-disc;
+        letter-spacing: 2px;
+      }
+      
+      select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%234a154b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        background-size: 20px;
+        padding-right: 40px;
+      }
+      
+      button {
+        width: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 14px;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+      }
+      
+      button:active {
+        transform: translateY(0);
+      }
+      
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .form-group:focus-within label {
+        color: #667eea;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          margin: 20px;
+          padding: 30px;
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+      }
+
+      /* Optional animation for form elements */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .form-group {
+        animation: fadeIn 0.5s ease forwards;
+        opacity: 0;
+      }
+
+      .form-group:nth-child(1) { animation-delay: 0.1s; }
+      .form-group:nth-child(2) { animation-delay: 0.2s; }
+      .form-group:nth-child(3) { animation-delay: 0.3s; }
+      .form-group:nth-child(4) { animation-delay: 0.4s; }
+      .form-group:nth-child(5) { animation-delay: 0.5s; }
+      .form-group:nth-child(6) { animation-delay: 0.6s; }
+      .form-group:nth-child(7) { animation-delay: 0.7s; }
+    </style>
+  </head>
+  <body>
+    <form action="you.html"> 
+    <div class="container">
+      <h1>Tarang 2025 Registration</h1>
+      
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            required 
+            pattern="[0-9]{10}"
+            maxlength="10"
+            title="Please enter exactly 10 digits"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+            placeholder="Enter 10-digit number"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="year">Year</label>
+          <select id="year" name="year" required>
+            <option value="">Select Year</option>
+            <option value="first">First Year</option>
+            <option value="second">Second Year</option>
+            <option value="third">Third Year</option>
+            <option value="fourth">Fourth Year</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="branch">Branch</label>
+          <select id="branch" name="branch" required>
+            <option value="">Select Branch</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cse">Computer Science Engineering</option>
+            <option value="electrical">Electrical Engineering</option>
+            <option value="mechanical">Mechanical Engineering</option>
+            <option value="electronics">Electronics Engineering</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="event">Events</label>
+          <select id="event" name="event" required>
+            <option value="">Select Event</option>
+            <option value="fashion-show">Fashion Show</option>
+            <option value="dance">Dance</option>
+            <option value="singing">Singing</option>
+            <option value="film-making">Film Making</option>
+            <option value="food-making">Food Making</option>
+            <option value="anchoring">Anchoring</option>
+            <option value="volunteer">Volunteer</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional Comments</label>
+          <textarea 
+            id="comments" 
+            name="comments" 
+            maxlength="300" 
+            placeholder="Share any additional information (maximum 300 words)"
+          ></textarea>
+        </div>
+        
+
+      
+        <button type="submit">Register</button>
+      </form>
+      </form>
+    </div>
+  </body>
+</html>
